@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int ariya(int r);   // function declaration
+int ariy(int r);
+int main()
+{
+    int r, a;
+    printf("Enter radius of circle: ");
+    scanf("%d", &r);
+    a = ariya(r);
+    int p;
+    p = ariy(r);
+    printf("Area of circle = %d", a);
+    printf("\nPerimeter of circle = %d", p);
+    return 0;
+}
+
+int ariya(int r)
+{
+    int c;
+    c = 3.14 * r * r;
+    return c;
+}
+int ariy(int r)
+{
+    int p;
+    p = 2 * 3.14 * r;
+    return p;
+}
