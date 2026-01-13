@@ -1,0 +1,17 @@
+#include<stdio.h>
+int name(int n);
+void main()
+{
+    int n,a;
+    printf("Enter n:");
+    scanf("%d",&n);
+    a=name(n);
+    printf("Sum of digits %d",a);
+    
+}
+int name(int n)
+{
+    int c;
+    c=(n%10)+(n/10);
+    return c;
+}
