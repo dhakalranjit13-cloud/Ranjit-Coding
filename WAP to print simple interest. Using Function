@@ -1,0 +1,17 @@
+#include<stdio.h>
+int name(int p,int t,int r);
+void main()
+{
+    int p,t,r,a;
+    printf("Enter p & t & r:");
+    scanf("%d%d%d",&p,&t,&r);
+    a=name(p,t,r);
+    printf("Simple interest %d",a);
+    
+}
+int name(int p,int t,int r)
+{
+    int c;
+    c=(p*t*r)/100;
+    return c;
+}
